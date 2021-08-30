@@ -1,17 +1,11 @@
-div {
+.navbar {
+    color: #22af9c;
+}
+
+.whole {
     background-image: url("https://www.teahub.io/photos/full/1-19957_high-quality-nice-hd-wallpapers-reta-familia-free.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.navbar {
-    background-color: rgb(250, 241, 241);
-    color: #17bde6;
-    display: flex;
-}
-
-.main {
-    background: transparent;
 }
 
 .loader {
@@ -21,20 +15,18 @@ div {
 }
 
 .navitems h2 {
-    margin-left: 10%;
-    font-size: 30px;
-    display: inline-block;
-}
-
-.logo {
-    width: 1000px;
-    height: 200px;
+    margin-top: 30px;
+    font-size: 50px;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .btn {
-    margin-left: 80%;
-    float: right;
-    margin: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    margin-bottom: 2rem;
     background-image: linear-gradient(to bottom, #e2b3ee, #ca87f1);
     border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
@@ -48,11 +40,6 @@ div {
     background-image: -webkit-linear-gradient(top, #17bde6, #7df8c5);
     text-decoration: none;
     box-shadow: 2px 2px 2px 2px grey;
-}
-
-.main {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .avatar {

@@ -55,33 +55,18 @@ class App extends Component {
     }
 
     render() {
-        return ( <
-            >
-            <
-            nav className = "navbar" >
-            <
-            div className = "navitems" >
-            <
-            img src = "https://letsgrowmore.in/wp-content/uploads/2021/05/growmore-removebg-preview.png"
-            alt = "logo"
-            className = "logo" / > <
-            button class = "btn btn-primary"
-            onClick = { this.loadUsers2 }
-            role = "button" > More < /button> <
-            button class = "btn btn-primary"
-            onClick = { this.loadUsers1 }
-            role = "button" > Get Users < /button> < /
-            div > <
-            /nav>
-
-            <
-            div className = "userData" >
-            <
-            Users loading = { this.state.loading }
-            users = { this.state.users_data }
-            /> < /
-            div > <
-            />
+        return ( 
+            <div className = "whole">
+              <nav className = "navbar" >
+                <div className = "navitems">
+                  <h2 > LetsGrowMore </h2> 
+                  <button class = "btn btn-primary" onClick = { this.loadUsers1 }> Get Users </button>
+                </div> 
+              </nav>
+              <div className = "userData">
+                <Users loading = { this.state.loading } users = { this.state.users_data }/> 
+              </div>
+            </div>
         );
     }
 }
